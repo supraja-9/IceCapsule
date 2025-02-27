@@ -1,6 +1,6 @@
-import Sidebar from "../components/Sidebar";
-import FileList from "../components/FileList";
-import UploadButton from "../components/UploadButton";
+import Sidebar from '../components/Sidebar'
+import FileList from '../components/FileList'
+import UploadButton from '../components/UploadButton'
 
 const Home = () => (
   <div className="flex">
@@ -10,8 +10,6 @@ const Home = () => (
       <FileList />
     </div>
   </div>
-);
+)
 
-
-export default Home;
-
+export default Home

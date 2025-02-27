@@ -1,12 +1,12 @@
-import { Provider } from "react-redux";
-import { configureStore } from "@reduxjs/toolkit";
-import filesReducer from "./store/filesSlice";
-import Home from "./pages/Home";
-import Navbar from "../components/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
+import { Provider } from 'react-redux'
+import { configureStore } from '@reduxjs/toolkit'
+import fileSlice from './store/fileSlice'
+import Home from './pages/Home'
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Login from './pages/Login'
 
-const store = configureStore({ reducer: { files: filesReducer } });
+const store = configureStore({ reducer: { files: fileSlice } })
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         </Routes>
       </Router>
     </Provider>
-  );
+  )
 }
 
-export default App;
+export default App
