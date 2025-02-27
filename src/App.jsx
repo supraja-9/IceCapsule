@@ -1,10 +1,10 @@
 import { Provider } from 'react-redux'
 import { configureStore } from '@reduxjs/toolkit'
-import fileSlice from './store/fileSlice'
-import Home from './pages/Home'
-import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Login from './pages/Login'
+import fileSlice from '/src/store/fileSlice'
+import Home from '/src/pages/Home'
+import Navbar from '/src/components/Navbar'
+import Login from '/src/pages/Login'
 
 const store = configureStore({ reducer: { files: fileSlice } })
 
